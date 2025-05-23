@@ -11,139 +11,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Georgia:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
         <div class="logo-box">
             <h1>Kelvin Onuoha</h1>
-            <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-dryoarlogo.png" alt="logo" width="150">
+            <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-excitingexpedition.jpg" alt="company logo" width="100">
         </div>
 
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Trips</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="trips.html">Trips</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <main>
-        <div class="banner-box">
+    <main> 
+        <div>
+            <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/z-excitingexpedition.jpg" alt="company logo" style="width: 100%;">
+            <h1>Exciting Expedition</h1>
+            <article>
+                <h2>About Our Adventure</h2>
+                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting59_600.jpg" alt="happy folks" style="width: 100%;">
+                <p>Join us for an unforgettable adventure on the river! Our experienced guides will take you through breathtaking landscapes and thrilling rapids. Whether you're a beginner or an experienced rafter, we have the perfect trip for you.</p>
+            </article>
+        </div>
+
+        <section>
+            <h2>History</h2>
+            <p>At Exciting Expedition, we are dedicated to providing safe and thrilling whitewater rafting experiences. Our mission is to create unforgettable memories while ensuring the highest standards of safety and customer satisfaction.</p>
+        </section>
+
+        <section>
             <h2>Adventure Awaits!</h2>
+            <div class="image-gallery">
+                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting17_600.jpg" alt="happy folks" style="width: 100%;">
+                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting26_600.jpg" alt="rafting" style="width: 100%;">
+                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting19_600.jpg" alt="rafting" style="width: 100%;">
+                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting29_600.jpg" alt="rafting" style="width: 100%;">
+                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting58_600.jpg" alt="rafting" style="width: 100%;">
+            </div>
             <p>Experience the thrill of whitewater rafting with breathtaking scenery and unforgettable moments.</p>
-        </div>
-
-        <div class="product-gallery">
-            <section class="product">
-                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/product/z-dryoarlogo.png" alt="Whitewater Rafting">
-                <h2>Exciting Rapids</h2>
-                <p>Challenge the wild waters with expert guides ensuring your safety.</p>
-            </section>
-            
-            <section class="product">
-                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/product/z-dryoarlogo.png" alt="Family Friendly Trips">
-                <h2>Family-Friendly Rafting</h2>
-                <p>Safe and thrilling experiences for all ages.</p>
-            </section>
-
-            <section class="product">
-                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/product/z-dryoarlogo.png" alt="Camping Trips">
-                <h2>Camping Packages</h2>
-                <p>Enjoy nature with overnight camping and rafting adventures.</p>
-            </section>
-
-            <section class="product">
-                <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/product/z-dryoarlogo.png" alt="Private Guide">
-                <h2>Private Guided Tours</h2>
-                <p>Book an exclusive trip tailored to your preferences.</p>
-            </section>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>© 2025 | White Water Rafting Company | Adventure Awaits</p>
+        <nav class="social-media">
+            <a href="https://www.facebook.com">
+                <img src="https://cdn1.iconfinder.com/data/icons/social-media-2285/512/Colored_Facebook3_svg-128.png" alt="Facebook" width="30">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-128.png" alt="Instagram" width="30">
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-twitter-128.png" alt="Twitter" width="30">
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/Colored_LinkedIn3_svg-128.png" alt="LinkedIn" width="30">
+            </a>
+        </nav>
     </footer>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-/* Style the header */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    background-color: #505033; /* Drab dark brown */
-    color: white;
-}
-
-.logo-box {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Style the navigation */
-nav {
-    display: flex;
-    gap: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #f4b400;
-}
-
-/* Style the main section */
-main {
-    padding: 20px;
-    min-height: 60vh;
-}
-
-/* Banner box */
-.banner-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 20px;
-}
-
-/* Product gallery layout */
-.product-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.product {
-    width: 250px;
-    text-align: center;
-    background-color: #B4CDE4; /* Columbia blue */
-    padding: 15px;
-    border-radius: 8px;
-}
-
-/* Style the footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #505033; /* Drab dark brown */
-    color: white;
-}
