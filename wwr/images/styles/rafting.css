@@ -1,116 +1,122 @@
-:root {
-    --primary-color: #505033;
-    --secondary-color: #264969;
-    --accent1-color: #CFCFB4;
-    --accent2-color: #B4CDE4;
-    --heading-font: Georgia, serif;
-    --body-font: Arial, sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--secondary-color);
-    background-color: var(--accent1-color);
-}
-
-/* Header Styling */
+/* HEADER with CSS GRID */
 header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    padding: 20px;
+    max-width: 1000px;
+    margin: 1rem auto;
+    border-bottom: 1px solid #ccc;
+}
+
+/* LOGO BOX */
+.logo-box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    width: 100%;
 }
 
 .logo-box img {
-    max-width: 100px;
+    width: 80px;
     height: auto;
 }
 
-/* Navigation */
+/* NAVIGATION USING FLEXBOX */
 nav {
     display: flex;
-    gap: 20px;
+    justify-content: flex-end;
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--accent2-color);
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--accent1-color);
-}
-
-/* Main Content */
-header, main, footer {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Image Fix */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Headings */
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-/* Sections and Articles */
-section, article {
-    margin: 16px;
-    padding: 12px;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 20px;
-}
-
-.hero img {
-    max-width: 500px; /* Adjust this size */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Footer */
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Social Media Links */
-.socialmedia {
+.navigation {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-.socialmedia a {
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: navy;
+    padding: 15px;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
-.socialmedia img {
-    width: 30px;
-    height: auto;
+.navigation a:hover, .navigation a.active {
+    color: tomato;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* HISTORY SECTION WITH GRID */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--accent2-color);
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* ADVENTURE SECTION USING FIGURE */
+.adventure-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.adventure-section figure {
+    width: 18%;
+    text-align: center;
+}
+
+.adventure-section figcaption {
+    margin-top: 5px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* CTA BUTTON */
+.cta-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #0078D7;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #005faa;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .history {
+        grid-template-columns: 1fr;
+    }
+    
+    .adventure-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .adventure-section figure {
+        width: 45%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
 }
