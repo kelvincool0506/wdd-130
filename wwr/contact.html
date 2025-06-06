@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Exciting Expedition</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.png" alt="Company Logo">
+            <h1>Exciting Expedition</h1>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+
+        <!-- Employee Profiles -->
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="profiles-container">
+                <figure>
+                    <img src="images/employee1.jpg" alt="John - Lead Guide">
+                    <figcaption>John Doe - Lead Rafting Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Sarah - Customer Support">
+                    <figcaption>Sarah Lee - Customer Support</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Mike - Safety Expert">
+                    <figcaption>Mike Brown - Safety Expert</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label><input type="radio" name="purpose" value="general-inquiry"> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation-question"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="website-suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label><input type="checkbox" name="newsletter"> Subscribe to our monthly newsletter</label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+    <p>© 2025 | White Water Rafting Company | Adventure Awaits</p>
+    <nav class="social-media">
+        <a href="https://www.facebook.com"><img src="images/facebook-icon.png" alt="Facebook" width="30"></a>
+        <a href="https://www.instagram.com"><img src="images/instagram-icon.png" alt="Instagram" width="30"></a>
+        <a href="https://www.twitter.com"><img src="images/twitter-icon.png" alt="Twitter" width="30"></a>
+        <a href="https://www.linkedin.com"><img src="images/linkedin-icon.png" alt="LinkedIn" width="30"></a>
+    </nav>
+    <p class="footer-wireframe"><a href="wireframes/contact-us-wireframe.png">View Contact Us Wireframe</a></p>
+</footer>
+</body>
+</html>

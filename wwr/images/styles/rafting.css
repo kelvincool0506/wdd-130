@@ -100,6 +100,77 @@ nav {
     background-color: #005faa;
 }
 
+/* EMPLOYEE PROFILES SECTION */
+.employee-profiles {
+    text-align: center;
+    padding: 20px;
+}
+
+.profiles-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.profiles-container figure {
+    text-align: center;
+}
+
+.profiles-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* CONTACT FORM STYLING */
+.contact-form {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #005fa3;
+}
+
+/* FOOTER LINK TO WIREFRAME */
+.footer-wireframe {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-wireframe a {
+    color: navy;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-wireframe a:hover {
+    text-decoration: underline;
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .history {
@@ -118,5 +189,16 @@ nav {
     nav {
         flex-direction: column;
         align-items: center;
+    }
+
+    /* Ensure employees stack vertically on mobile */
+    .profiles-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Make form fields more mobile-friendly */
+    .contact-form {
+        width: 100%;
     }
 }
