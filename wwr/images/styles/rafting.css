@@ -18,7 +18,7 @@ header {
 }
 
 .logo-box img {
-    width: 80px;
+    width: 100px;
     height: auto;
 }
 
@@ -104,6 +104,7 @@ nav {
 .employee-profiles {
     text-align: center;
     padding: 20px;
+    max-width: 100%;
 }
 
 .profiles-container {
@@ -113,21 +114,29 @@ nav {
 }
 
 .profiles-container figure {
+    width: 120px; /* Ensures the container doesn’t stretch */
     text-align: center;
 }
 
+
 .profiles-container img {
-    width: 150px;
-    height: auto;
+    width: 100px !important;
+    height: 100px !important;
     border-radius: 50%;
+    object-fit: cover;
+    display: block;
 }
+
+
+
 
 /* CONTACT FORM STYLING */
 .contact-form {
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 20px;
     text-align: left;
+    
 }
 
 .contact-form form {
@@ -136,10 +145,9 @@ nav {
     gap: 10px;
 }
 
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
+input:focus, textarea:focus {
+    border: 2px solid #0078D7;
+    outline: none;
 }
 
 .contact-form button {
